@@ -1,0 +1,16 @@
+WAYS IN WHICH THIS CODE SUCKS
+=============================
+
+- It has no user interface to speak of. For n-back n is selected by modifying the last line of code.
+- It requires espeak to make sounds. Relatedly:
+    - It also uses and hence requires pulseaudio.
+    - It communicates with pulseaudio by having espeak output into a named pipe in the project directory.
+      Which is just icky.
+- It may or may not require python 2.7. Features like {1, 2, 3} (a set literal) might be special to 2.7.
+
+USING IT
+--------
+
+Run "python nback.py" in the project directory to begin.
+The last line of nback.py can be modified to change the value of "n".
+Press "a" to signal a visual (position) match, and "l" for an audio (letter) match.
