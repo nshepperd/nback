@@ -11,6 +11,8 @@ WAYS IN WHICH THIS CODE SUCKS
 USING IT
 --------
 
+NBack is a continuous performance task game. (http://en.wikipedia.org/wiki/N-back for explanation.)
+The aim is to remember if the same visual-position or audio-letter was shown/sounded n moves ago.
 Run "python nback.py" in the project directory to begin.
 The last line of nback.py can be modified to change the value of "n".
 Press "a" to signal a visual (position) match, and "l" for an audio (letter) match.
