@@ -72,20 +72,15 @@ def nback(screen, n, type):
             os.system("espeak -w snd {0} & paplay snd &".format(audio[i]))
         pygame.display.flip()
 
-        if (type > 1):
-            time.sleep(2.500)
-        else:
-            time.sleep(0.500)
-
+        time.sleep(0.500)
         screen.fill((0, 0, 0))
         drawaxes(screen)
         message(screen, "TRIAL {0}/{1}".format(i + 1, trials))
         pygame.display.flip()
-        if (type == 1):
-            time.sleep(2.500)
+        time.sleep(2.000)
+
         vmark = False
-        if (type > 1):
-            amark = False
+        amark = False
 
         # Handle keyboard input
         for event in pygame.event.get():
