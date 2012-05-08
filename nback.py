@@ -31,7 +31,7 @@ visual_points = {(0, 0), (0, 1), (0, 2), (2, 0), (2, 1), (2, 2), (1, 0), (1, 2)}
 audio_points = set("AVSOMUIT")
 
 def gentrials(n, points):
-    trials = 2 + n
+    trials = 20 + n
     tlist = []
     target = [True] * 6 + [False] * 14
     random.shuffle(target)
